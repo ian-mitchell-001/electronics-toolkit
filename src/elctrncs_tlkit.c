@@ -1,9 +1,11 @@
 # include <stdio.h>
 # include <math.h>
+# include <string.h>
+
 /* This program is more or less a calculator for electronics. It will do most basic calculations in DC and AC along with some electromagnetism. I will be adding more functions as I go along with learning electronics since I'm still a student in the EE shop at my high school. 
 
-I cannot guaruntee that this will be as good as something like SPICE. It is more for my electronics class and for furutre projects.*/
-/*
+I cannot guaruntee that this will be as good as something like SPICE. It is more for my electronics class and for furutre projects.
+
 
 Electronics toolkit. A simple electronics calculator. 
 Copyright (C) 2018 Ian Mitchell <Ian.Mitchell_001@gmx.com>
@@ -21,26 +23,31 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-// The `float` is used to essentially just give it support for floating point numbers. I don't have much success with GCC otherwise. 
+// The main menu
 float main(){
+int menu_choice;
 
+printf("Electronics Toolkit\n");
+printf("___________________\n\n");
+
+break(menu_choice){
+
+}
 	return 0;
 }
 
 // Functions below
 // ---------------
 
-// The menu function for selecting a thing to calculate. 
-float menu();
-float menu(){
-
-}
 
 // Ohm's law. No electronics program is complete without it!
 
 float ohm();
 float ohm(){
-
+// Main variables for voltage, reistance, current, and power.
+float V, R, I, P;
+// Variables for AC circuits. Just mainly reactance. 
+float chi;
 }
 
 // DC circuit calculations. Will work with series and parallel circuits. 
@@ -56,13 +63,14 @@ float ac();
 float ac(){
 
 }
-
+/* *ALSO TODO:** LEARN RL, RC, AND RLC CIRCUITS.
 // Capacitor and inductor calculations. **TODO:** RL, RC, and RLC circuits
 
 float capnind();
 float capnind(){
 
 }
+*/
 
 // Basic electromagnetism calculations
 
