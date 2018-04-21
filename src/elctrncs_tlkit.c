@@ -72,6 +72,14 @@ V = I * R;
 printf("V = %f [volts]\nI = %f [Amperes]\nR = %f", V, I, R);
 break;
 
+case 2:
+
+break;
+
+case 3:
+
+break;
+}
 main();
 }
 
