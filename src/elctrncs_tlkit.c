@@ -44,10 +44,35 @@ break(menu_choice){
 
 float ohm();
 float ohm(){
-// Main variables for voltage, reistance, current, and power.
-float V, R, I, P;
+// Main variables for voltage, resistance, current, and power.
+// Volts, ohms, amps, watts
+float V, R, I, P; 
 // Variables for AC circuits. Just mainly reactance. 
+// Ohms
 float chi;
+
+// Menu choice
+int ohm_choice;
+/*
+V = I * R;
+R = V / I;
+I = V / R;
+*/
+printf("Solving for...\n(1) Voltage\n(2) Resistance\n(3) Current\n\n----->");
+scanf("%d", ohm_choice);
+
+switch (ohm_choice){
+case 1:
+printf("\nPlease input current and resistance...\nI = ");
+scanf("%f", I);
+printf("\nR = ");
+
+V = I * R;
+
+printf("V = %f [volts]\nI = %f [Amperes]\nR = %f", V, I, R);
+break;
+
+main();
 }
 
 // DC circuit calculations. Will work with series and parallel circuits. 
