@@ -15,7 +15,16 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 You should have received a copy of the GNU General Public License along with this program. If not, see https://www.gnu.org/licenses/ . */
 
-// The main menu float main(){ int menu_choice;
+// The main menu
+menu float main(){ 
+int menu_choice;
+
+/**************************
+***PLACE VARIABLES HERE****
+**************************/
+float V, I, R, P; // Ohm's law
+float R_T, R_TS, R_TP; // Total series and total parallel resistance.
+/**************************/
 
 printf("Electronics Toolkit\n"); printf("___________________\n\n");
 
@@ -31,38 +40,47 @@ float ohm(); float ohm(){ // Main variables for voltage, resistance, current, an
 
 // Menu choice int ohm_choice; /* V = I * R; R = V / I; I = V / R; */ printf("Solving for...\n(1) Voltage\n(2) Resistance\n(3) Current\n\n----->"); scanf("%d", ohm_choice);
 
-switch (ohm_choice){ case 1: printf("\nPlease input current and resistance...\nI = "); scanf("%f", I); printf("\nR = ");
-
-V = I * R;
-
-printf("V = %f [volts]\nI = %f [Amperes]\nR = %f", V, I, R); break;
-
-case 2:
-
-break;
-
-case 3:
-
-break; } main(); }
+switch (ohm_choice){ 
+  case 1: 
+    printf("\nPlease input current and resistance...\nI = "); 
+    scanf("%f", I); printf("\nR = ");
+    V = I * R;
+    printf("V = %f [Volts]\nI = %f [Amperes]\nR = %f [Ohms]\n\n********\n\n", V, I, R); 
+    
+    break;
+  case 2:
+    
+    break;
+  
+  case 3:
+    
+    break; 
+} 
+  main(); 
+}
 
 // DC circuit calculations. Will work with series and parallel circuits.
 
-float dc(); float dc(){
+float dc(); 
+float dc(){
 
 }
 
 // AC circuit calculations
 
-float ac(); float ac(){
+float ac(); 
+float ac(){
 
 } /* ALSO TODO: * LEARN RL, RC, AND RLC CIRCUITS. // Capacitor and inductor calculations. TODO: RL, RC, and RLC circuits
 
-float capnind(); float capnind(){
+float capnind(); 
+float capnind(){
 
 } */
 
 // Basic electromagnetism calculations
 
-float electromag(); float electromag(){
+float electromag(); 
+float electromag(){
 
 }
